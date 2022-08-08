@@ -12,15 +12,6 @@ port = int(os.environ.get("PORT", 5000))
 
 @app.route('/')
 def index():
-
-    # We will just display our mailgun secret key, nothing more.
-    return "333"
-
-# Route that will get the config value based on a provided key, so in
-# this way we can interogate our configuration.
-@app.route('/<config_key>')
-def key(config_key=None):
-    config_value=None
     return "333"
 
 
