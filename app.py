@@ -4,7 +4,6 @@ from flask import Flask, render_template
 app = Flask('MyHerokuApp')
 
 # Read the mailgun secret key from environment variables
-mailgun_secret_key_value = os.environ.get('MAILGUN_SECRET_KEY', None)
 
 # This is needed for Heroku configuration, as in Heroku our
 # app will probably not run on port 5000, as Heroku will automatically
@@ -15,7 +14,7 @@ port = int(os.environ.get("PORT", 5000))
 def index():
 
     # We will just display our mailgun secret key, nothing more.
-    return render_template("index.html", value=mailgun_secret_key_value)
+    return render_template("333")
 
 # Route that will get the config value based on a provided key, so in
 # this way we can interogate our configuration.
